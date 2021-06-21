@@ -1,7 +1,6 @@
 // INCLUDE EXPRESS MODULE
 const express = require('express');
-// INCLUDE BODY-PARSER FOR PARSING REQUESTS
-// const bodyParser = require('body-parser');
+
 // CREATE EXPRESS APP
 const app = express();
 
@@ -11,21 +10,6 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const sqlConfig = require('./config/sql');
-
-// // PARSE application/json
-// app.use(
-//   bodyParser.json({
-//     limit: '49mb',
-//   })
-// );
-
-// // PARSE application/x-www-form-urlencoded
-// app.use(
-//   bodyParser.urlencoded({
-//     limit: '50mb',
-//     extended: true,
-//   })
-// );
 
 /************************************************************************************************
                 	
