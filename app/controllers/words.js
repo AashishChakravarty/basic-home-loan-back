@@ -2,7 +2,7 @@ const words = require('../managers/words.manager');
 const { matchedData } = require('express-validator');
 
 const postWord = async (req, res) => {
-  const { word } = matchedData(req, { locations: ['query'] });
+  const { word } = matchedData(req, { locations: ['body'] });
 
   const condition = { word };
   const values = { word }

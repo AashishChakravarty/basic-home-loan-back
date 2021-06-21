@@ -1,7 +1,7 @@
-const { query } = require('express-validator');
+const { body } = require('express-validator');
 
 const wordValidate = [
-	query('word')
+	body('word')
 		.exists()
 		.trim()
 		.withMessage('word is missing'),

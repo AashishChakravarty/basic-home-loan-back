@@ -11,6 +11,9 @@ dotenv.config();
 
 const sqlConfig = require('./config/sql');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 /************************************************************************************************
                 	
                   CORS SETTINGS 
